@@ -54,7 +54,7 @@
 
 	if ($dialog.ShowDialog() -ne  [System.Windows.Forms.DialogResult]::OK) {
 		echo "処理をキャンセルしました"
-		exit
+		return
 	}
 
 	$CsvFileFullPath = $dialog.FileName

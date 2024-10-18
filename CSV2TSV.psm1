@@ -1,4 +1,4 @@
-﻿function CSV2TSV([switch]$VertionCheck){
+﻿function CSV2TSV([switch]$UTF8, [switch]$VertionCheck){
 	# バージョンチェックとオンライン更新
 	if( $VertionCheck ){
 		$ModuleName = "TestModule"
@@ -61,8 +61,12 @@
 
 	$dialog.Dispose()
 
-
-	$CSVDatas = Import-Csv $CsvFileFullPath -Encoding oem
+	if( $UTF8 ){
+		$CSVDatas = Import-Csv $CsvFileFullPath
+	}
+	else{
+		$CSVDatas = Import-Csv $CsvFileFullPath -Encoding oem
+	}
 
 	[array]$SplitPath = $CsvFileFullPath.split('.')
 

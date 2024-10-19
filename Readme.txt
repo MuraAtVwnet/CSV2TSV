@@ -52,9 +52,8 @@ git@github.com:MuraAtVwnet/CSV2TSV.git
 
 ■ Web Page
 
-PowerShell でデータを TSV 出力する
-https://www.vwnet.jp/Windows/PowerShell/2023090701/TSVbyPowerShell7.htm
-
+PowerShell で CSV を TSV に変換する
+https://www.vwnet.jp/Windows/PowerShell/2024101901/CSV2TSV.htm
 
 ■ スクリプトインストール方法
 

@@ -1,7 +1,7 @@
 ﻿function CSV2TSV([switch]$UTF8, [switch]$VertionCheck){
 	# バージョンチェックとオンライン更新
 	if( $VertionCheck ){
-		$ModuleName = "TestModule"
+		$ModuleName = "CSV2TSV"
 		$GitHubName = "MuraAtVwnet"
 
 		$Module = $ModuleName + ".psm1"
